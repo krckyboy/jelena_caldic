@@ -1,23 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import SubHeading from '../components/SubHeading'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Container = styled.div`
-	background-color: #e5cf87;
 	max-width: 1440px;
 	margin: 0 auto;
-
+	overflow: hidden;
+    position: relative;
+    
 	p {
+		z-index: 5;
 		font-size: 16px;
 		line-height: 26px;
+		flex: 1 0;
 
-		@media (min-width: 768px) {
-            width: 50%;
-            max-width: 392px;
+		@media (min-width: 800px) {
+			font-size: 18px;
+		}
+
+		@media (min-width: 900px) {
 			order: 1;
+			flex: 30% 0;
+			padding-bottom: 0;
+			margin-right: 24px;
 
 			&:nth-child(2) {
 				order: 2;
+				margin-right: 48px;
 			}
 		}
 	}
@@ -29,12 +40,22 @@ const Container = styled.div`
 
 const FlexContainer = styled.div`
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 
-	@media (min-width: 768px) {
-        flex-direction: row;
-        flex: 0 0 100%;
+	@media (min-width: 900px) {
+		flex-direction: row;
 	}
+`
+
+const Background = styled.div`
+	position: absolute;
+	background-color: #e5cf87;
+	left: 0;
+	top: 0;
+	content: '';
+	height: 100%;
+	z-index: 0;
+	margin-bottom: 15px;
 `
 
 const ImageContainer = styled.div`
@@ -42,11 +63,13 @@ const ImageContainer = styled.div`
 	position: relative;
 	width: 100%;
 	max-width: 400px;
+	flex: 1;
 
-	@media (min-width: 768px) {
+	@media (min-width: 900px) {
 		margin: 0 auto;
-		margin-bottom: 82px;
+		margin-bottom: 0;
 		order: 3;
+		transform: translateY(-30%);
 	}
 
 	img {
@@ -58,6 +81,10 @@ const ImageContainer = styled.div`
 			display: block;
 			max-width: 80%;
 			/* min-height: 400px; */
+
+			@media (min-width: 900px) {
+				max-width: 90%;
+			}
 		}
 
 		&:nth-child(2) {
@@ -66,16 +93,26 @@ const ImageContainer = styled.div`
 			left: 0;
 			bottom: -50px;
 			max-width: 50%;
+
+			@media (min-width: 1440px) {
+				left: -50px;
+			}
 		}
 	}
 `
 
 export default () => {
+	useEffect(() => {
+		AOS.init({ duration: 2000 })
+	})
 	return (
-		<section className='topMargin'>
+		<section className='topMargin' style={{ position: 'relative' }}>
+			<Background data-aos='fullWidthLeftToRight' />
 			<Container className='topBottomPadding'>
 				<div className='sideMargin'>
-					<SubHeading style={{ backgroundColor: '#D6AC1D' }}>O meni</SubHeading>
+					<SubHeading style={{ backgroundColor: '#D6AC1D', zIndex: 5 }}>
+						O meni
+					</SubHeading>
 					<FlexContainer>
 						<p>
 							Quas molestias excepturi sint occaecati cupiditate non provident,

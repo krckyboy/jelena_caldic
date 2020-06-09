@@ -7,7 +7,7 @@ body {
 body,
 a {
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #503E33;
+	color: #503e33;
 }
 
 a {
@@ -63,4 +63,31 @@ li {
 
 .topMargin {
 	margin-top: 80px;
+}
+
+@keyframes fullWidthLeftToRight {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+[data-aos='fullWidthLeftToRight'] {
+	transition: all;
+	width: 0%;
+	&.aos-animate {
+		width: 100%;
+	}
+}
+
+[data-aos='fullWidthRightToLeft'] {
+	transition: all;
+	width: 100%;
+	background-color: transparent;
+	&.aos-animate {
+		background-color: #f2f2f2;
+		width: 0%;
+	}
 }
