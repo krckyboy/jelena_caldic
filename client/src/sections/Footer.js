@@ -8,11 +8,17 @@ const Container = styled.div`
 	p {
 		font-size: 16px;
 		line-height: 26px;
+
+		@media (min-width: 960px) {
+		font-size: 18px;
+	}
 	}
 
 	p:not(:last-child) {
 		margin-bottom: 32px;
 	}
+
+
 `
 
 export default () => {

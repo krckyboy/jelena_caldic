@@ -13,9 +13,22 @@ const Container = styled.div`
 	p {
 		font-size: 16px;
 		line-height: 26px;
+		flex: 1 0;
 
 		@media (min-width: 800px) {
 			font-size: 18px;
+		}
+
+		@media (min-width: 900px) {
+			order: 1;
+			flex: 30% 0;
+			padding-bottom: 0;
+			margin-right: 24px;
+
+			&:nth-child(2) {
+				order: 2;
+				margin-right: 48px;
+			}
 		}
 	}
 
@@ -61,6 +74,18 @@ const FlexContainer = styled.div`
 const VideoContainer = styled.div`
 	margin-bottom: 32px;
 	width: 100%;
+
+	flex: 1;
+
+	@media (min-width: 900px) {
+		margin: 0 auto;
+		order: 3;
+	}
+
+	@media (min-width: 1100px) {
+		margin-bottom: -55px;
+		transform: translateY(-20%);
+	}
 
 	img {
 		width: 100%;

@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import SubHeading from '../components/SubHeading'
 import Gallery from 'react-grid-gallery'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Container = styled.div`
 	background-color: transparent;
 	max-width: 1440px;
-    margin: 0 auto;
+	margin: 0 auto;
 
 	img {
 		object-fit: cover;
@@ -117,8 +119,11 @@ const GalleryContainer = styled.div`
 `
 
 export default () => {
+	useEffect(() => {
+		AOS.init({ duration: 2000 })
+	})
 	return (
-		<section className='topMargin'>
+		<section className='topMargin' data-aos='flip-down'>
 			<Container className='topBottomPadding' style={{ paddingTop: 0 }}>
 				<div className='sideMargin'>
 					<SubHeading style={{ backgroundColor: '#95200D' }}>
