@@ -4,6 +4,8 @@ import SubHeading from '../components/SubHeading'
 
 const Container = styled.div`
 	background-color: #99b3cb;
+	max-width: 1440px;
+    margin: 0 auto;
 
 	p {
 		font-size: 16px;
