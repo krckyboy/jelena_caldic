@@ -23,15 +23,31 @@ const Section = styled.section`
 		left: 50%;
 		transform: translateX(-50%);
 
+		@media (orientation: landscape) {
+			top: 35%;
+		}
+
 		div {
 			position: relative;
 		}
 
 		p {
-			font-size: 6.4rem;
+			font-size: 56px;
 			display: block;
 			text-align: center;
 			margin: 0 auto;
+
+			@media (orientation: landscape) {
+				font-size: 32px;
+			}
+
+			@media (min-width: 800px) and (orientation: landscape) {
+				font-size: 48px;
+			}
+
+			@media (min-width: 800px) {
+				font-size: 96px;
+			}
 
 			&::after {
 				height: 8px;
@@ -43,13 +59,33 @@ const Section = styled.section`
 		}
 
 		span {
-			font-size: 2.4rem;
+			font-size: 24px;
 			position: absolute;
 			bottom: -5%;
 			transform: translateY(100%);
 			right: 0;
-			/* identical to box height */
+
+			@media (orientation: landscape) {
+				font-size: 16px;
+            }
+            
+			@media (min-width: 800px) {
+				font-size: 36px;
+			}
 		}
+	}
+`
+
+const Container = styled.div`
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+
+	@media (orientation: landscape) {
+		padding-top: 0;
+		padding-bottom: 16px;
 	}
 `
 
@@ -60,14 +96,22 @@ const Logo = styled.a`
 	color: #e79b70;
 	height: 72px;
 	justify-self: flex-start;
+
+	@media (orientation: landscape) {
+		font-size: 24px;
+	}
 `
 
 const SocialContainer = styled.div`
 	position: absolute;
 	width: 100%;
-	bottom: 5%;
+	bottom: 7%;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@media (orientation: landscape) {
+		bottom: 10%;
+	}
 
 	div {
 		text-align: center;
@@ -81,23 +125,33 @@ const SocialContainer = styled.div`
 export default () => {
 	return (
 		<Section className='sideMargin'>
-			<Logo href='/'>JELENA ĆALDIĆ</Logo>
-			<h1>
-				<div>
-					<p>Jelena Ćaldić</p>
-					<span>vokalni solista</span>
-				</div>
-			</h1>
-			<SocialContainer>
-				<div>
-					<a href='https://www.facebook.com/jelena.caldic.9' target='_blank' rel="noopener noreferrer" >
-						<img src='/icons/facebook.svg' alt='Facebook' />
-					</a>
-					<a href='https://www.instagram.com/jelenacaldicofficialprofile/' target='_blank' rel="noopener noreferrer" >
-						<img src='/icons/instagram.svg' alt='Instagram' />
-					</a>
-				</div>
-			</SocialContainer>
+			<Container className='topBottomPadding'>
+				<Logo href='/'>JELENA ĆALDIĆ</Logo>
+				<h1>
+					<div>
+						<p>Jelena Ćaldić</p>
+						<span>vokalni solista</span>
+					</div>
+				</h1>
+				<SocialContainer>
+					<div>
+						<a
+							href='https://www.facebook.com/jelena.caldic.9'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<img src='/icons/facebook.svg' alt='Facebook' />
+						</a>
+						<a
+							href='https://www.instagram.com/jelenacaldicofficialprofile/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<img src='/icons/instagram.svg' alt='Instagram' />
+						</a>
+					</div>
+				</SocialContainer>
+			</Container>
 		</Section>
 	)
 }

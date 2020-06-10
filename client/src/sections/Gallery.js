@@ -120,10 +120,10 @@ const GalleryContainer = styled.div`
 
 export default () => {
 	useEffect(() => {
-		AOS.init({ duration: 2000 })
+		AOS.init({ duration: 1000 })
 	})
 	return (
-		<section className='topMargin' data-aos='flip-down'>
+		<section className='topMargin' data-aos='zoom-in-right'>
 			<Container className='topBottomPadding' style={{ paddingTop: 0 }}>
 				<div className='sideMargin'>
 					<SubHeading style={{ backgroundColor: '#95200D' }}>
