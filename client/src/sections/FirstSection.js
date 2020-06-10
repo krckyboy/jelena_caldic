@@ -32,21 +32,22 @@ const Section = styled.section`
 		}
 
 		p {
-			font-size: 56px;
+			font-size: 48px;
 			display: block;
 			text-align: center;
 			margin: 0 auto;
 
-			@media (orientation: landscape) {
-				font-size: 32px;
-			}
 
-			@media (min-width: 800px) and (orientation: landscape) {
+			@media (min-width: 800px) {
 				font-size: 48px;
 			}
 
 			@media (min-width: 800px) {
 				font-size: 96px;
+			}
+
+			@media (max-height: 500px) {
+				font-size: 32px;
 			}
 
 			&::after {
@@ -65,12 +66,12 @@ const Section = styled.section`
 			transform: translateY(100%);
 			right: 0;
 
-			@media (orientation: landscape) {
-				font-size: 16px;
-            }
-            
 			@media (min-width: 800px) {
 				font-size: 36px;
+			}
+
+			@media (max-height: 500px) {
+				font-size: 16px;
 			}
 		}
 	}
