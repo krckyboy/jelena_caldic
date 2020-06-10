@@ -37,7 +37,6 @@ const Section = styled.section`
 			text-align: center;
 			margin: 0 auto;
 
-
 			@media (min-width: 800px) {
 				font-size: 48px;
 			}
@@ -84,21 +83,27 @@ const Container = styled.div`
 	position: relative;
 	height: 100vh;
 
-	@media (orientation: landscape) {
-		padding-top: 0;
-		padding-bottom: 16px;
+	padding-top: 0;
+	padding-bottom: 16px;
+
+	@media (min-width: 800px) {
+		padding-bottom: 24px;
 	}
 `
 
 const Logo = styled.a`
 	font-family: Shadows Into Light Two;
-	font-size: 36px;
+	font-size: 24px;
 	line-height: 58px;
 	color: #e79b70;
 	height: 72px;
 	justify-self: flex-start;
 
-	@media (orientation: landscape) {
+	@media (min-width: 800px) {
+		font-size: 32px;
+	}
+
+	@media (max-height: 500px) {
 		font-size: 24px;
 	}
 `
@@ -121,12 +126,18 @@ const SocialContainer = styled.div`
 			margin-right: 16px;
 		}
 	}
+
+	img {
+		@media (max-height: 500px) {
+			height: 40px;
+		}
+	}
 `
 
 export default () => {
 	return (
 		<Section className='sideMargin'>
-			<Container className='topBottomPadding'>
+			<Container>
 				<Logo href='/'>JELENA ĆALDIĆ</Logo>
 				<h1>
 					<div>
