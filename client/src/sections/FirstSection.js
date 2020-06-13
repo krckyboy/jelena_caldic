@@ -49,6 +49,10 @@ const Section = styled.section`
 				font-size: 32px;
 			}
 
+			@media (min-width: 1440px) {
+				font-size: 140px;
+			}
+
 			&::after {
 				height: 8px;
 				display: block;

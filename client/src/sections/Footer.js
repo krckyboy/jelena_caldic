@@ -4,13 +4,14 @@ import styled from 'styled-components'
 const Container = styled.div`
 	background-color: #F5D25A;
 	text-align: center;
+	text-transform: uppercase;
 
 	p {
 		font-size: 16px;
 		line-height: 26px;
 
 		@media (min-width: 960px) {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	}
 
