@@ -18,42 +18,93 @@ const Container = styled.div`
 
 const IMAGES = [
 	{
-		src: '/images/gallery/1.jpg',
-		thumbnail: '/images/gallery/thumbnails/1.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
-	},
-	{
 		src: '/images/gallery/2.jpg',
 		thumbnail: '/images/gallery/thumbnails/2.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
+		thumbnailWidth: 474,
+		thumbnailHeight: 418,
 	},
-
 	{
 		src: '/images/gallery/3.jpg',
 		thumbnail: '/images/gallery/thumbnails/3.jpg',
 		thumbnailWidth: 320,
-		thumbnailHeight: 212,
+		thumbnailHeight: 418,
 	},
 	{
 		src: '/images/gallery/4.jpg',
 		thumbnail: '/images/gallery/thumbnails/4.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: 474,
+		thumbnailHeight: 418,
 	},
-	{
-		src: '/images/gallery/5.jpg',
-		thumbnail: '/images/gallery/thumbnails/5.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-
+	// 2. row
 	{
 		src: '/images/gallery/6.jpg',
 		thumbnail: '/images/gallery/thumbnails/6.jpg',
+		thumbnailWidth: 392,
+		thumbnailHeight: 418,
+	},
+	{
+		src: '/images/gallery/8.jpg',
+		thumbnail: '/images/gallery/thumbnails/8.jpg',
+		thumbnailWidth: 392,
+		thumbnailHeight: 418,
+	},
+	{
+		src: '/images/gallery/9.jpg',
+		thumbnail: '/images/gallery/thumbnails/9.jpg',
+		thumbnailWidth: 639,
+		thumbnailHeight: 418,
+	},
+	// 3. row
+	{
+		src: '/images/gallery/16.jpg',
+		thumbnail: '/images/gallery/thumbnails/16.jpg',
+		thumbnailWidth: 354,
+		thumbnailHeight: 677,
+	},
+	{
+		src: '/images/gallery/12.jpg',
+		thumbnail: '/images/gallery/thumbnails/12.jpg',
+		thumbnailWidth: 354,
+		thumbnailHeight: 677,
+	},
+	{
+		src: '/images/gallery/13.jpg',
+		thumbnail: '/images/gallery/thumbnails/13.jpg',
+		thumbnailWidth: 354,
+		thumbnailHeight: 677,
+	},
+	{
+		src: '/images/gallery/17.jpg',
+		thumbnail: '/images/gallery/thumbnails/17.jpg',
+		thumbnailWidth: 354,
+		thumbnailHeight: 677,
+	},
+	// 4. row
+	{
+		src: '/images/gallery/11.jpg',
+		thumbnail: '/images/gallery/thumbnails/11.jpg',
+		thumbnailWidth: 538,
+		thumbnailHeight: 418,
+	},
+	{
+		src: '/images/gallery/10.jpg',
+		thumbnail: '/images/gallery/thumbnails/10.jpg',
+		thumbnailWidth: 578,
+		thumbnailHeight: 418,
+	},
+
+	{
+		src: '/images/gallery/14.jpg',
+		thumbnail: '/images/gallery/thumbnails/14.jpg',
+		thumbnailWidth: 308,
+		thumbnailHeight: 418,
+	},
+	// 5. row
+	{
+		src: '/images/gallery/1.jpg',
+		thumbnail: '/images/gallery/thumbnails/1.jpg',
 		thumbnailWidth: 320,
-		thumbnailHeight: 212,
+		thumbnailHeight: 174,
 	},
 	{
 		src: '/images/gallery/7.jpg',
@@ -62,59 +113,8 @@ const IMAGES = [
 		thumbnailHeight: 174,
 	},
 	{
-		src: '/images/gallery/8.jpg',
-		thumbnail: '/images/gallery/thumbnails/8.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-
-	{
-		src: '/images/gallery/9.jpg',
-		thumbnail: '/images/gallery/thumbnails/9.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-	{
-		src: '/images/gallery/10.jpg',
-		thumbnail: '/images/gallery/thumbnails/10.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
-	},
-	{
-		src: '/images/gallery/11.jpg',
-		thumbnail: '/images/gallery/thumbnails/11.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-
-	{
-		src: '/images/gallery/12.jpg',
-		thumbnail: '/images/gallery/thumbnails/12.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-	{
-		src: '/images/gallery/13.jpg',
-		thumbnail: '/images/gallery/thumbnails/13.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-
-	{
-		src: '/images/gallery/14.jpg',
-		thumbnail: '/images/gallery/thumbnails/14.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-	{
-		src: '/images/gallery/16.jpg',
-		thumbnail: '/images/gallery/thumbnails/16.jpg',
-		thumbnailWidth: 320,
-		thumbnailHeight: 212,
-	},
-	{
-		src: '/images/gallery/17.jpg',
-		thumbnail: '/images/gallery/thumbnails/17.jpg',
+		src: '/images/gallery/5.jpg',
+		thumbnail: '/images/gallery/thumbnails/5.jpg',
 		thumbnailWidth: 320,
 		thumbnailHeight: 212,
 	},

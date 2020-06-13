@@ -80,7 +80,6 @@ const ImageContainer = styled.div`
 			margin-left: auto;
 			display: block;
 			max-width: 80%;
-			/* min-height: 400px; */
 
 			@media (min-width: 900px) {
 				max-width: 90%;
