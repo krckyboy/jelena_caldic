@@ -20,104 +20,103 @@ const IMAGES = [
 	{
 		src: '/images/gallery/2.jpg',
 		thumbnail: '/images/gallery/thumbnails/2.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 174,
+		thumbnailWidth: 226,
+		thumbnailHeight: 320,
 	},
 	{
 		src: '/images/gallery/3.jpg',
 		thumbnail: '/images/gallery/thumbnails/3.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		thumbnailHeight: 179,
 	},
 	{
 		src: '/images/gallery/4.jpg',
 		thumbnail: '/images/gallery/thumbnails/4.jpg',
-        thumbnailWidth: 320,
-        thumbnailHeight: 212
-	},
-	// 2. row
-	{
-		src: '/images/gallery/6.jpg',
-		thumbnail: '/images/gallery/thumbnails/6.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 174,
-	},
-	{
-		src: '/images/gallery/8.jpg',
-		thumbnail: '/images/gallery/thumbnails/8.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		thumbnailHeight: 213,
 	},
 	{
 		src: '/images/gallery/9.jpg',
 		thumbnail: '/images/gallery/thumbnails/9.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		thumbnailHeight: 174,
 	},
-	// 3. row
+	// 2. row
 	{
-		src: '/images/gallery/16.jpg',
-		thumbnail: '/images/gallery/thumbnails/16.jpg',
+		src: '/images/gallery/8.jpg',
+		thumbnail: '/images/gallery/thumbnails/8.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 174,
+		thumbnailHeight: 213,
 	},
-	{
-		src: '/images/gallery/12.jpg',
-		thumbnail: '/images/gallery/thumbnails/12.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 116,
-	},
-	{
-		src: '/images/gallery/13.jpg',
-		thumbnail: '/images/gallery/thumbnails/13.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 116,
-	},
-	{
-		src: '/images/gallery/17.jpg',
-		thumbnail: '/images/gallery/thumbnails/17.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 174,
-	},
-	// 4. row
 	{
 		src: '/images/gallery/11.jpg',
 		thumbnail: '/images/gallery/thumbnails/11.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		thumbnailHeight: 183,
 	},
 	{
 		src: '/images/gallery/10.jpg',
 		thumbnail: '/images/gallery/thumbnails/10.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 116,
-	},
-
-	{
-		src: '/images/gallery/14.jpg',
-		thumbnail: '/images/gallery/thumbnails/14.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 174,
-	},
-	// 5. row
-	{
-		src: '/images/gallery/1.jpg',
-		thumbnail: '/images/gallery/thumbnails/1.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		thumbnailHeight: 212,
 	},
 	{
-		src: '/images/gallery/7.jpg',
-		thumbnail: '/images/gallery/thumbnails/7.jpg',
-		thumbnailWidth: 320,
-        thumbnailHeight: 116,
+		src: '/images/gallery/6.jpg',
+		thumbnail: '/images/gallery/thumbnails/6.jpg',
+		thumbnailWidth: 240,
+		thumbnailHeight: 320,
+	},
+	// 3. row
+	{
+		src: '/images/gallery/16.jpg',
+		thumbnail: '/images/gallery/thumbnails/16.jpg',
+		thumbnailWidth: 257,
+		thumbnailHeight: 320,
 	},
 	{
 		src: '/images/gallery/5.jpg',
 		thumbnail: '/images/gallery/thumbnails/5.jpg',
 		thumbnailWidth: 320,
-        thumbnailHeight: 174,
+		thumbnailHeight: 148,
 	},
+	{
+		src: '/images/gallery/13.jpg',
+		thumbnail: '/images/gallery/thumbnails/13.jpg',
+		thumbnailWidth: 320,
+		thumbnailHeight: 213,
+	},
+	{
+		src: '/images/gallery/17.jpg',
+		thumbnail: '/images/gallery/thumbnails/17.jpg',
+		thumbnailWidth: 320,
+		thumbnailHeight: 190,
+	},
+	// 4. row
+	{
+		src: '/images/gallery/12.jpg',
+		thumbnail: '/images/gallery/thumbnails/12.jpg',
+		thumbnailWidth: 200,
+		thumbnailHeight: 116,
+	},
+	{
+		src: '/images/gallery/1.jpg',
+		thumbnail: '/images/gallery/thumbnails/1.jpg',
+		thumbnailWidth: 200,
+		thumbnailHeight: 116,
+	},
+	{
+		src: '/images/gallery/14.jpg',
+		thumbnail: '/images/gallery/thumbnails/14.jpg',
+		thumbnailWidth: 200,
+		thumbnailHeight: 174,
+	},
+	{
+		src: '/images/gallery/7.jpg',
+		thumbnail: '/images/gallery/thumbnails/7.jpg',
+		thumbnailWidth: 200,
+		thumbnailHeight: 116,
+	},
+	// 5. row
 ]
 
 const GalleryContainer = styled.div`
@@ -125,6 +124,10 @@ const GalleryContainer = styled.div`
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+
+	img {
+		object-position: top;
+	}
 
 	iframe {
 		position: absolute;
@@ -155,7 +158,7 @@ export default () => {
 						Galerija
 					</SubHeading>
 					<GalleryContainer>
-						<Gallery images={IMAGES} />
+						<Gallery images={IMAGES} rowHeight={264} />
 					</GalleryContainer>
 				</div>
 			</Container>
