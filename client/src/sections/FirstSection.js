@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Section = styled.section`
 	height: 100vh;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)),
-		url('/images/rsz_microphone.jpg');
+		url('/images/rsz_microphone (1).jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
