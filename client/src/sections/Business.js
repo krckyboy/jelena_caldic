@@ -74,12 +74,14 @@ const FlexContainer = styled.div`
 const VideoContainer = styled.div`
 	margin-bottom: 32px;
 	width: 100%;
+	max-width: 400px;
 
 	flex: 1;
 
 	@media (min-width: 900px) {
 		margin: 0 auto;
 		order: 3;
+		max-width: initial;
 	}
 
 	@media (min-width: 1100px) {
@@ -89,7 +91,6 @@ const VideoContainer = styled.div`
 
 	img {
 		width: 100%;
-		max-width: 800px;
 	}
 `
 
@@ -117,7 +118,7 @@ export default () => {
 							quidem rerum facilis est et expedita distinctio.
 						</p>
 						<VideoContainer>
-							<img src='/images/jelena3.jpg' alt='Jelena Ćaldić' />
+							<img src='/images/rsz_jelena3-min.jpg' alt='Jelena Ćaldić' />
 						</VideoContainer>
 						<p>
 							At vero eos et accusamus et iusto odio dignissimos ducimus qui

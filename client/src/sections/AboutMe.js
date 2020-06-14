@@ -123,8 +123,8 @@ export default () => {
 							quidem rerum facilis est et expedita distinctio.
 						</p>
 						<ImageContainer>
-							<img src='/images/jelena1.jpg' alt='Jelena Ćaldić' />
-							<img src='/images/jelena2.jpg' alt='Jelena Ćaldić' />
+							<img src='/images/jelena1-min.jpg' alt='Jelena Ćaldić' />
+							<img src='/images/jelena2resized-min.jpg' alt='Jelena Ćaldić' />
 						</ImageContainer>
 						<p>
 							At vero eos et accusamus et iusto odio dignissimos ducimus qui
