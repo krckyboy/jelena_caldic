@@ -4,13 +4,23 @@ import styled from 'styled-components'
 const Section = styled.section`
 	height: 100vh;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)),
-		url('/images/microphone_mobile-min.jpg');
+		url('/images/microphone_mobile.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-repeat: none;
 	color: #f9f9f9;
 	position: relative;
 	padding-top: 24px;
+
+	@media (min-width: 768px) {
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)),
+			url('/images/microphone_desktop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-repeat: none;
+	}
 
 	h1 {
 		font-family: Shadows Into Light Two;
