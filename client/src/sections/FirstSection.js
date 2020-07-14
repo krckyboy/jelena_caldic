@@ -23,7 +23,6 @@ const Section = styled.section`
 	}
 
 	h1 {
-		font-family: Shadows Into Light Two;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -106,7 +105,6 @@ const Container = styled.div`
 `
 
 const Logo = styled.a`
-	font-family: Shadows Into Light Two;
 	font-size: 24px;
 	line-height: 58px;
 	color: #e79b70;

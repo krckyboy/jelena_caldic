@@ -9,6 +9,7 @@ const Container = styled.div`
 	padding-bottom: 48px;
 
 	p {
+		font-weight: 500;
 		font-size: 16px;
 		line-height: 26px;
 

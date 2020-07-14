@@ -11,6 +11,7 @@ const Container = styled.div`
 	position: relative;
 
 	p {
+		font-weight: 500;
 		z-index: 5;
 		font-size: 16px;
 		flex: 1 0;
