@@ -19,7 +19,7 @@ const Container = styled.div`
 		letter-spacing: 0.1rem;
 
 		@media (min-width: 900px) {
-			font-size: 22px;
+			font-size: 24px;
 			order: 1;
 			flex: 50% 0;
 			padding-bottom: 0;

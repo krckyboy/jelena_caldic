@@ -19,7 +19,7 @@ const Container = styled.div`
 		letter-spacing: 0.1rem;
 
 		@media (min-width: 900px) {
-			font-size: 22px;
+			font-size: 24px;
 			order: 1;
 			flex: 50% 0;
 			padding-bottom: 0;
@@ -114,7 +114,7 @@ export default () => {
 					</SubHeading>
 					<FlexContainer>
 						<p>
-							Zdravo, ja sam Jelena Ćaldić i ja sam vokalni solista. Rođena sam
+							Zdravo, ja sam Jelena Ćaldić i ja sam <strong>vokalni solista</strong>. Rođena sam
 							16. oktobra u Užicu i potičem iz muzičke porodice. Pevanjem se
 							bavim od 2012. godine i ljubav prema muzici je prerasla u moje
 							profesionalno zanimanje. Takođe, pohađala sam raketnu mehatroniku
