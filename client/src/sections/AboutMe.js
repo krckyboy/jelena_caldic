@@ -117,7 +117,7 @@ export default () => {
 							16. oktobra u Užicu i potičem iz muzičke porodice. Pevanjem se
 							bavim od 2012. godine i ljubav prema muzici je prerasla u moje
 							profesionalno zanimanje. Takođe, pohađala sam raketnu mehatroniku
-							na Vazduhoplovnoj Akademiji u Beogradu. Moji hobiji su:
+							na Vazduhoplovnoj Akademiji u Beogradu. <br /><br />Moji hobiji su:
 							slikarstvo, pisanje pesama i briga o cveću. Svoje pevanje sam
 							orijentisala na izvođenje narodne muzike, ali pored toga repertoar
 							je raznovrstan folk, turbo-folk i zabavna muzika.

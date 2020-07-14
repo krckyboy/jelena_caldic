@@ -49,7 +49,8 @@ const Background = styled.div`
 
 const PlainBackground = styled.div`
 	position: absolute;
-	background-color: #99b3cb;
+	/* background-color: #99b3cb; */
+	background-color: #c5ced6;
 	/* background-color: blue; */
 	left: 0;
 	top: 0;
@@ -108,9 +109,9 @@ export default () => {
 							Svakodnevno unapređujući inventivnost, sa ciljem da svaki sledeći
 							nastup bude profesionalniji i da publika bude zadovoljnija,
 							nedavno sam okupila ekipu mladih i ozbiljnih instrumentalista koji
-							su zaduženi zajedno sa mnom, da Vam ulepšaju svaki svečani povod.
+							su zaduženi zajedno sa mnom, da Vam ulepšaju svaki svečani povod.<br /><br />
 							Do konačnog formiranja i plodotvornosti benda, na raspolaganju sam
-							kao solo izvođač.
+							kao <strong>solo izvođač</strong>.
 						</p>
 						<VideoContainer>
 							<img src='/images/rsz_jelena3-min.jpg' alt='Jelena Ćaldić' />
