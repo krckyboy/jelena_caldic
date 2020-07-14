@@ -78,12 +78,16 @@ const GalleryDesktop = styled.div`
 	display: none;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(5, 10vw);
-	grid-gap: 32px;
 	width: 100%;
 	max-width: initial;
 
 	@media (min-width: 900px) {
 		display: grid;
+		grid-gap: 32px;
+	}
+
+	@media (min-width: 1350px) {
+		grid-gap: 64px;
 	}
 `
 
