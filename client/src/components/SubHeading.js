@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Heading = styled.h2`
-font-family: 'Rajdhani', sans-serif;
-
 	text-transform: uppercase;
 	max-width: 100%;
 	position: relative;
