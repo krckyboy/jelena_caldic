@@ -8,21 +8,19 @@ const Container = styled.div`
 	max-width: 1440px;
 	margin: 0 auto;
 	overflow: hidden;
-    position: relative;
-    
+	position: relative;
+
 	p {
 		z-index: 5;
 		font-size: 16px;
-		line-height: 26px;
 		flex: 1 0;
-
-		@media (min-width: 800px) {
-			font-size: 18px;
-		}
+		line-height: 170%;
+		letter-spacing: 0.1rem;
 
 		@media (min-width: 900px) {
+			font-size: 22px;
 			order: 1;
-			flex: 30% 0;
+			flex: 50% 0;
 			padding-bottom: 0;
 			margin-right: 24px;
 
@@ -42,8 +40,9 @@ const FlexContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1350px) {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 `
 
@@ -62,13 +61,13 @@ const ImageContainer = styled.div`
 	margin-bottom: 82px;
 	position: relative;
 	width: 100%;
-	max-width: 400px;
+	max-width: 450px;
 	flex: 1;
+	order: 3;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1350px) {
 		margin: 0 auto;
 		margin-bottom: 0;
-		order: 3;
 		transform: translateY(-30%);
 	}
 
@@ -114,26 +113,19 @@ export default () => {
 					</SubHeading>
 					<FlexContainer>
 						<p>
-							Quas molestias excepturi sint occaecati cupiditate non provident,
-							similique sunt in culpa qui officia deserunt mollitia animi, id
-							est laborum et dolorum fuga. Et harum quidem rerum facilis est et
-							expedita distinctio. quas molestias excepturi sint occaecati
-							cupiditate non provident, similique sunt in culpa qui officia
-							deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-							quidem rerum facilis est et expedita distinctio.
+							Zdravo, ja sam Jelena Ćaldić i ja sam vokalni solista. Rođena sam
+							16. oktobra u Užicu i potičem iz muzičke porodice. Pevanjem se
+							bavim od 2012. godine i ljubav prema muzici je prerasla u moje
+							profesionalno zanimanje. Takođe, pohađala sam raketnu mehatroniku
+							na Vazduhoplovnoj Akademiji u Beogradu. Moji hobiji su:
+							slikarstvo, pisanje pesama i briga o cveću. Svoje pevanje sam
+							orijentisala na izvođenje narodne muzike, ali pored toga repertoar
+							je raznovrstan folk, turbo-folk i zabavna muzika.
 						</p>
 						<ImageContainer>
 							<img src='/images/jelena1-min.jpg' alt='Jelena Ćaldić' />
 							<img src='/images/jelena2resized-min.jpg' alt='Jelena Ćaldić' />
 						</ImageContainer>
-						<p>
-							At vero eos et accusamus et iusto odio dignissimos ducimus qui
-							blanditiis praesentium voluptatum deleniti atque corrupti quos
-							dolores et quas molestias excepturi sint occaecati cupiditate non
-							provident, similique sunt in culpa qui officia deserunt mollitia
-							animi, id est laborum et dolorum fuga. Et harum quidem rerum
-							facilis est et expedita distinctio.
-						</p>
 					</FlexContainer>
 				</div>
 			</Container>

@@ -5,6 +5,8 @@ const Container = styled.div`
 	background-color: #F5D25A;
 	text-align: center;
 	text-transform: uppercase;
+	padding-top: 48px;
+	padding-bottom: 48px;
 
 	p {
 		font-size: 16px;
@@ -25,7 +27,7 @@ const Container = styled.div`
 export default () => {
 	return (
 		<footer className='topMargin'>
-			<Container className='topBottomPadding'>
+			<Container>
 				<div className='sideMargin'>
 					<p>
 						Made by{' '}

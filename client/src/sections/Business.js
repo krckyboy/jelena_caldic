@@ -12,21 +12,19 @@ const Container = styled.div`
 
 	p {
 		font-size: 16px;
-		line-height: 26px;
+		line-height: 16px;
 		flex: 1 0;
-
-		@media (min-width: 800px) {
-			font-size: 18px;
-		}
+		line-height: 170%;
+		letter-spacing: 0.1rem;
 
 		@media (min-width: 900px) {
+			font-size: 22px;
 			order: 1;
-			flex: 30% 0;
+			flex: 50% 0;
 			padding-bottom: 0;
 			margin-right: 24px;
 
 			&:nth-child(2) {
-				order: 2;
 				margin-right: 48px;
 			}
 		}
@@ -66,7 +64,8 @@ const FlexContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1350px) {
+		justify-content: space-between;
 		flex-direction: row;
 	}
 `
@@ -75,20 +74,17 @@ const VideoContainer = styled.div`
 	margin-bottom: 32px;
 	width: 100%;
 	max-width: 400px;
+	order: 2;
 
 	flex: 1;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1350px) {
 		margin: 0 auto;
-		order: 3;
-		max-width: initial;
-	}
+		max-width: 450px;
 
-	@media (min-width: 1100px) {
 		margin-bottom: -55px;
 		transform: translateY(-20%);
 	}
-
 	img {
 		width: 100%;
 	}
@@ -109,25 +105,16 @@ export default () => {
 					</SubHeading>
 					<FlexContainer>
 						<p>
-							Quas molestias excepturi sint occaecati cupiditate non provident,
-							similique sunt in culpa qui officia deserunt mollitia animi, id
-							est laborum et dolorum fuga. Et harum quidem rerum facilis est et
-							expedita distinctio. quas molestias excepturi sint occaecati
-							cupiditate non provident, similique sunt in culpa qui officia
-							deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-							quidem rerum facilis est et expedita distinctio.
+							Svakodnevno unapređujući inventivnost, sa ciljem da svaki sledeći
+							nastup bude profesionalniji i da publika bude zadovoljnija,
+							nedavno sam okupila ekipu mladih i ozbiljnih instrumentalista koji
+							su zaduženi zajedno sa mnom, da Vam ulepšaju svaki svečani povod.
+							Do konačnog formiranja i plodotvornosti benda, na raspolaganju sam
+							kao solo izvođač.
 						</p>
 						<VideoContainer>
 							<img src='/images/rsz_jelena3-min.jpg' alt='Jelena Ćaldić' />
 						</VideoContainer>
-						<p>
-							At vero eos et accusamus et iusto odio dignissimos ducimus qui
-							blanditiis praesentium voluptatum deleniti atque corrupti quos
-							dolores et quas molestias excepturi sint occaecati cupiditate non
-							provident, similique sunt in culpa qui officia deserunt mollitia
-							animi, id est laborum et dolorum fuga. Et harum quidem rerum
-							facilis est et expedita distinctio.
-						</p>
 					</FlexContainer>
 				</div>
 			</Container>
