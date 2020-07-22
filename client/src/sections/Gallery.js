@@ -14,6 +14,10 @@ const Container = styled.div`
 	img {
 		object-fit: cover;
 		object-position: top;
+
+		&[src*='/images/viber_image_2020-07-23_00-48-56.jpg'] {
+			object-position: center;
+		}
 	}
 `
 
@@ -22,10 +26,10 @@ const images = [
 		src: '/images/gallery/9-min.webp',
 	},
 	{
-		src: '/images/gallery/3-min.webp',
+		src: '/images/gallery/17-min.webp',
 	},
 	{
-		src: '/images/gallery/4-min.webp',
+		src: '/images/viber_image_2020-07-23_00-48-56.jpg',
 	},
 	{
 		src: '/images/gallery/2-min.webp',

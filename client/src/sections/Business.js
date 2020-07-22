@@ -115,7 +115,7 @@ export default () => {
 							kao <strong>solo izvođač</strong>.
 						</p>
 						<VideoContainer>
-							<img src='/images/rsz_jelena3-min.jpg' alt='Jelena Ćaldić' />
+							<img src='/images/viber_image_2020-07-23_00-21-1.jpg' alt='Jelena Ćaldić' />
 						</VideoContainer>
 					</FlexContainer>
 				</div>
